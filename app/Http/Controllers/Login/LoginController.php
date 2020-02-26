@@ -14,7 +14,7 @@ class LoginController extends Controller
 
     //注册接收页面
     public function add(){
-        $data  = request()->all();  //接受全部信息
+        $data  = request()->all();  //接受用户全部信息
 //        dump($data);
         $sql = Login::insert($data);
         if($sql){
